@@ -11,7 +11,8 @@ import DayList from "components/DayList.js";
 import InterviewerList from "components/InterviewerList";
 import InterviewerListItem from "components/InterviewerListItem";
 import Appointmnet from "components/Appointment/index.js";
-import Header from "components/Appointment/header.js"
+import Header from "components/Appointment/header.js";
+import Empty from "components/Appointment/empty.js";
 
 
 storiesOf("Button", module)
@@ -150,4 +151,10 @@ storiesOf("Button", module)
           <Header
           time="12pm"
           />
-        ));
+        ))
+        .add("Empty",()=>(
+          <Empty
+          onAdd={action("onAdd")}
+         
+          />
+        ))

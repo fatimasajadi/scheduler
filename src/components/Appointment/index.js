@@ -8,12 +8,17 @@ import React from "react";
 
 export default function Appointment(props) {
 
- 
- return (
-   <div className="appointment">
-  <Header time={props.time} />
-  {props.interview ? <Show student={props.interview.student}  interviewer={props.interview.interviewer}  /> : <Empty />}
-   </div>
- );
- 
+
+  return (
+    <div className="appointment">
+      <Header time={props.time} />
+      {
+        props.interview ? <Show
+          student={props.interview.student}
+          interviewer={props.interview.interviewer}
+        /> : <Empty />
+      }
+    </div>
+  );
+
 }

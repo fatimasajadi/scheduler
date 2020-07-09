@@ -18,8 +18,41 @@ export function getAppointmentsForDay(state, day) {
   for (const id of findDay.appointments) {
     //push each appointment from state.appointments with the same id as the findDay obj id
     dayArr.push(state.appointments[id]);
-
   }
   return dayArr;
-
 } 
+
+//getInterview
+export function getInterview(state, interview) {
+  if (!interview) {
+    return null;
+  }
+
+  const interviewer = state.interviewers[interview.interviewer];
+  return {
+    ...interview,
+    interviewer,
+  };
+}
+
+// STATE
+
+// Given Obj
+
+// {
+//   "student": "Lydia Miller-Jones",
+//   "interviewer": 1
+// }
+
+// Return Obj
+// {  
+//   "student": "Lydia Miller-Jones",
+//   "interviewer": {  
+//     "id": 1,
+//     "name": "Sylvia Palmer",
+//     "avatar": "https://i.imgur.com/LpaY82x.png"
+//   }
+// }
+
+
+ 

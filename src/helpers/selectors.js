@@ -1,5 +1,4 @@
 export function getAppointmentsForDay(state, day) {
-
   let dayArr = [];
 
   //find the object in our state.days array matching day provided
@@ -20,7 +19,7 @@ export function getAppointmentsForDay(state, day) {
     dayArr.push(state.appointments[id]);
   }
   return dayArr;
-} 
+}
 
 //getInterview
 export function getInterview(state, interview) {
@@ -62,5 +61,4 @@ export function getInterviewersForDay(state, day) {
   }
   return dayArr;
 
-} 	
- 
+}

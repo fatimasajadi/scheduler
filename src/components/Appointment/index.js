@@ -12,7 +12,7 @@ import Status from "components/Appointment/status";
 const EMPTY = "EMPTY";
 const SHOW = "SHOW";
 const CREATE = "CREATE";
-const SAVE = "SAVE";
+
 const SAVING = "SAVING";
 const CONFIRM = 'CONFIRM';
 const DELETING = 'DELETING';

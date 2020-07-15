@@ -42,10 +42,11 @@ export default function Appointment(props) {
       .then(() => transition(EMPTY))
       .catch((error) => transition(ERROR_DELETE, true));
   }
+
   return (
     <>
       <Header time={props.time} />
-      <div className="appointment">
+      <div className="appointment" data-testid="appointment">
         {mode === SAVING && <Status message={'Saving'} />}
         {mode === SHOW && (
           <Show
@@ -56,33 +57,33 @@ export default function Appointment(props) {
           />
         )}
         {mode === EMPTY && <Empty onAdd={() => transition(CREATE)} />}
-        {mode === CREATE && <Form
+        {mode === CREATE && (<Form
           interviewers={props.interviewers}
           onSave={save}
           onCancel={() => back()}
-        />}
-        {mode === EDIT && <Form
+        />)}
+        {mode === EDIT && (<Form
           name={props.interview.student}
           interviewers={props.interviewers}
           interviewer={props.interview.interviewer.id}
           onSave={save} onCancel={() => back()}
-        />}
+        />)}
 
-        {mode === CONFIRM && <Confirm
+        {mode === CONFIRM && (<Confirm
           message={'Are you sure you want to cancel?'}
           onCancel={() => back()}
           onConfirm={deleteInterview}
-        />}
+        />)}
 
         {mode === DELETING && <Status
           message="Deleting"
         />}
-        {mode === ERROR_SAVE && <Error message="oops and error occurred while saving"
+        {mode === ERROR_SAVE && (<Error message="Could not save appointment"
           onClose={back}
-        />}
-        {mode === ERROR_DELETE && <Error message="oops and error occurred while deleting"
+        />)}
+        {mode === ERROR_DELETE && (<Error message="Could not delete appointment"
           onClose={back}
-        />}
+        />)}
 
       </div>
     </>

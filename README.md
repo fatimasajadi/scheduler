@@ -1,5 +1,11 @@
 # Interview Scheduler
 
+!["Initial Schedule"](https://github.com/fatimasajadi/scheduler/blob/master/docs/initial-schedule.PNG)
+!["Add appointments"](https://github.com/fatimasajadi/scheduler/blob/master/docs/add-appointmnets.PNG)
+!["Confirm delete"](https://github.com/fatimasajadi/scheduler/blob/master/docs/confirm-delete.PNG)
+!["Deleting status"](https://github.com/fatimasajadi/scheduler/blob/master/docs/deleting.png)
+!["Saving Status"](https://github.com/fatimasajadi/scheduler/blob/master/docs/saving.png)
+
 ## Setup
 
 Install dependencies with `npm install`.
@@ -21,9 +27,15 @@ npm test
 ```sh
 npm run storybook
 ```
+Dependencies
 
-!["Initial Schedule"](https://github.com/fatimasajadi/scheduler/blob/master/docs/initial-schedule.PNG)
-!["Add appointments"](https://github.com/fatimasajadi/scheduler/blob/master/docs/add-appointmnets.PNG)
-!["Confirm delete"](https://github.com/fatimasajadi/scheduler/blob/master/docs/confirm-delete.PNG)
-!["Deleting status"](https://github.com/fatimasajadi/scheduler/blob/master/docs/deleting.png)
-!["Saving Status"](https://github.com/fatimasajadi/scheduler/blob/master/docs/saving.png)
+Node 10.x or above
+NPM 5.x or above
+PG 6.x
+axios
+classnames
+dotenv 2.x -reactdom
+pg-native 3.x
+storybook
+cypress
+jest

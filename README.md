@@ -27,15 +27,16 @@ npm test
 ```sh
 npm run storybook
 ```
-Dependencies
+## Dependencies
 
-Node 10.x or above
-NPM 5.x or above
-PG 6.x
-axios
-classnames
-dotenv 2.x -reactdom
-pg-native 3.x
-storybook
-cypress
-jest
+- Node 10.x or above
+- NPM 5.x or above
+- PG 6.x
+- axios
+- classnames
+- dotenv 2.x
+  -reactdom
+- pg-native 3.x
+- storybook
+- cypress
+- jest

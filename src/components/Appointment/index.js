@@ -12,7 +12,6 @@ import Status from "components/Appointment/status";
 const EMPTY = "EMPTY";
 const SHOW = "SHOW";
 const CREATE = "CREATE";
-
 const SAVING = "SAVING";
 const CONFIRM = 'CONFIRM';
 const DELETING = 'DELETING';
@@ -84,7 +83,6 @@ export default function Appointment(props) {
         {mode === ERROR_DELETE && (<Error message="Could not delete appointment"
           onClose={back}
         />)}
-
       </div>
     </>
   );

@@ -16,8 +16,8 @@ const SAVING = "SAVING";
 const CONFIRM = 'CONFIRM';
 const DELETING = 'DELETING';
 const EDIT = 'EDIT';
-const ERROR_SAVE = 'ERROR';
-const ERROR_DELETE = "ERROR";
+const ERROR_SAVE = 'ERROR_SAVE';
+const ERROR_DELETE = "ERROR_DELETE";
 
 export default function Appointment(props) {
   const { mode, transition, back } = useVisualMode(
